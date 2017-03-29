@@ -1,0 +1,4 @@
+C:\Users\User\Desktop\projects\SimpleWebApp\IocContainer\bin\Debug\IocContainer.dll
+C:\Users\User\Desktop\projects\SimpleWebApp\IocContainer\bin\Debug\IocContainer.pdb
+C:\Users\User\Desktop\projects\SimpleWebApp\IocContainer\obj\Debug\IocContainer.dll
+C:\Users\User\Desktop\projects\SimpleWebApp\IocContainer\obj\Debug\IocContainer.pdb
