@@ -19,12 +19,17 @@ namespace IoCContainer
 
         public TTypeToResolve Resolve<TTypeToResolve>()
         {
-            throw new NotImplementedException();
+            return (TTypeToResolve)ResolveObject(typeof(TTypeToResolve));
         }
 
         public object Resolve(Type typeToResolve)
         {
-            throw new NotImplementedException();
+            var registeredObject = registeredObjects.FirstOrDefault(o => o.TypeToResolve == typeToResolve);
+            if (registeredObject == null)
+            {
+                throw new ObjectTypeNotRegisteredException(typeToResolve.Name);
+            }
+            return GetInstance(registeredObject);
         }
 
         private object ResolveObject(Type typeToResolve)
